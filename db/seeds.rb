@@ -17,8 +17,8 @@ u2 = User.create(username: 'yohanp', password: 'pass', email: 'yohanp@gmail.com'
 c1 = Company.create(name: 'Bethesda', description: 'adventure')
 c2 = Company.create(name: 'Blizzard', description: 'moba')
 
-g1 = Game.create(name: 'Skyrim', description: 'Old Norse Adventure', rating: 5, price: 59.99, company_id: c1.id)
-g2 = Game.create(name: 'Overwatch', description: '5v5 Shooters', rating: 4, price: 39.99, company_id: c2.id)
+g1 = Game.create(name: 'Skyrim', description: 'Old Norse Adventure', rating: 5, price: 59.99, company_id: c1.id, image: 'https://vignette.wikia.nocookie.net/elderscrolls/images/5/54/Game-es-vr.jpg/revision/latest/top-crop/width/220/height/220?cb=20171128184554')
+g2 = Game.create(name: 'Overwatch', description: '5v5 Shooters', rating: 4, price: 39.99, company_id: c2.id, image: 'https://icon-library.com/images/teamspeak-overwatch-icon/teamspeak-overwatch-icon-19.jpg')
 
 j1 = UserGameTable.create(user_id: u1.id, game_id: g1.id)
 j2 = UserGameTable.create(user_id: u2.id, game_id: g2.id)

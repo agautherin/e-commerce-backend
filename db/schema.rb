@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_08_23_232026) do
     t.float "price"
     t.integer "rating"
     t.integer "company_id"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -6,6 +6,7 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.float :price
       t.integer :rating
       t.integer :company_id
+      t.string :image
 
       t.timestamps
     end
